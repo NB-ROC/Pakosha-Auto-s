@@ -13,7 +13,7 @@
     <nav class="main-nav" aria-label="Hoofdmenu">
       <ul>
         <li><a href="{{ url('/') }}">Home</a></li>
-        <li><a href="{{ url('/onderdelen') }}" class="active">Onderdelen</a></li>
+        <li><a href="{{ url('/onderdelen') }}">Onderdelen</a></li>
         <li><a href="{{ url('/winkelmand') }}">Winkelmand</a></li>
       </ul>
     </nav>

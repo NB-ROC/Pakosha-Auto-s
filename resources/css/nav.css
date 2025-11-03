@@ -3,7 +3,7 @@
   background: #0e1b26;
   color: #d7e3ea;
   padding: 36px 16px;
-  border: 6px solid #083441; /* buitenste kader */
+  border: 6px solid #083441;
   box-sizing: border-box;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
@@ -72,7 +72,7 @@
   border:1px solid rgba(255,255,255,0.03);
 }
 
-/* Bottom bar */
+/* Bottom bar footer */
 .footer-bottom {
   margin-top:20px;
   padding-top:14px;
@@ -93,7 +93,7 @@
 /* Header styles */
 .site-header {
   background: #ffffff;
-  border-bottom: 4px solid #0e1b26; /* donkere lijn onder */
+  border-bottom: 4px solid #0e1b26; 
   padding: 10px 16px;
 }
 .header-inner {
@@ -126,7 +126,7 @@
 }
 .brand-text .tag {
   font-size: 12px;
-  color: #d7262b; /* rood subtitel */
+  color: #d7262b; 
   margin-top: 2px;
   font-weight:700;
 }
@@ -146,7 +146,7 @@
   font-weight: 500;
   padding: 8px 4px;
 }
-.main-nav a.active { color: #1976d2; } /* actieve link blauw */
+.main-nav a.active { color: #1976d2; } 
 .main-nav a:hover { color: #1976d2; }
 
 /* Responsive */
@@ -156,5 +156,5 @@
 }
 @media (max-width: 520px) {
   .header-inner { gap: 12px; }
-  .main-nav ul { display: none; } /* verberg menu op heel kleine schermen (mobile menu later toevoegen) */
+  .main-nav ul { display: none; } 
 }
