@@ -3,7 +3,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="{{ url('/') }}" class="brand-link">
-      <img src="{{ asset('images/logo.png') }}" alt="Pakosha Autos" class="logo">
+      <img src="{{ asset('img/pakosha-logo.png') }}" alt="Pakosha Autos" class="logo">
       <div class="brand-text">
         <div class="name">Pakosha Autos</div>
         <div class="tag">Onderdelen &amp; Service</div>
