@@ -146,7 +146,7 @@
   font-weight: 500;
   padding: 8px 4px;
 }
-.main-nav a.active { color: #1976d2; } 
+
 .main-nav a:hover { color: #1976d2; }
 
 /* Responsive */
