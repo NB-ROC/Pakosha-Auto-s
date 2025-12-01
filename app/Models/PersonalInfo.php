@@ -15,9 +15,10 @@ class PersonalInfo extends Model
         'user_id',
         'city',
         'street',
+        'house_number',
         'zipcode',
-        'country_code',
-        'phone',
+        'land',
+        'phone_number',
     ];
 
     public function user()

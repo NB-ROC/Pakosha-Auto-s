@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('zipcode', 15);
             $table->string('city');
             $table->string('land')->default('THE NETHERLANDS');
-            $table->string('telefoonnummer', 20);
+            $table->string('phone_number', 20);
             $table->timestamps();
         });
     }
