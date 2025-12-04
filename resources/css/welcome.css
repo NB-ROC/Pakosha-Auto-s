@@ -328,8 +328,8 @@ body {
 
 .car-badge {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 27px;
+    left: 0px;
     background: #d7262b;
     color: #fff;
     padding: 6px 12px;
