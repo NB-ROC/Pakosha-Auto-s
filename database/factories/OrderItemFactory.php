@@ -17,12 +17,15 @@ class OrderItemFactory extends Factory
      */
     public function definition(): array
     {
-        $product = Product::inRandomOrder()->first;
+        $product = Product::inRandomOrder()->first();
 
         $quantity = fake()->numberBetween(1, 3);
 
         return [
-
+            'order_id' => null,
+            'product_id' => $product->id,
+            'quantity' => $quantity,
+            'price_at_moment' => $product->price,
         ];
     }
 }

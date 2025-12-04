@@ -20,14 +20,9 @@ class OrderFactory extends Factory
         return [
             'user_id' => User::inRandomOrder()->first()->id,
             'total_price' => 0,
-            'status' => fake()->randomElement([['pending', 'shipped', 'delivered']]),
+            'status' => fake()->randomElement(['pending', 'shipped', 'delivered']),
             'created_at' => fake()->dateTimeBetween('-6 months', 'now'),
             'updated_at' => now(),
         ];
-    }
-
-    public function configure()
-    {
-
     }
 }
