@@ -1,4 +1,7 @@
 <h1>hello</h1>
 <form action="">
-    <button>login</button>
+    <p class="footer-line">
+        Al een account?
+        <a href="{{ route('login') }}">Inloggen</a>
+    </p>
 </form>

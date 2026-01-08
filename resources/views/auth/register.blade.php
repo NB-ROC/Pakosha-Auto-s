@@ -103,6 +103,25 @@
                         </div>
                     </div>
 
+                    <div class="field">
+                        <label for="phone" class="label">telefoonnummer</label>
+                        <input id="phone" name="phone" type="tel" class="input" placeholder="06123456789" value="{{ old('phone') }}" required autocomplete="tel">
+                        <x-input-error :messages="$errors->get('phone')" class="error" />
+                    </div>
+
+                    <div class="field">
+                        <label for="address" class="label">Address</label>
+                        <input id="address" name="address" type="text" class="input" placeholder="StationStraat 3 " value="{{ old('address') }}" required autocomplete="street-address">
+                        <x-input-error :messages="$errors->get('address')" class="error" />
+                    </div>
+
+
+                    <div class="field">
+                        <label for="birth_date" class="label">Geborte datum</label>
+                        <input id="birth_date" name="birth_date" type="date" class="input" value="{{ old('birth_date') }}" required autocomplete="bday">
+                        <x-input-error :messages="$errors->get('birth_date')" class="error" />
+                    </div>
+
                     {{-- E-mail --}}
                     <div class="field">
                         <label for="email" class="label">E-mail</label>

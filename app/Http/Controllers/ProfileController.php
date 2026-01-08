@@ -11,6 +11,19 @@ use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
+
+
+    /**
+     * Display the user's profile (read-only page).
+     */
+    public function index(): \Illuminate\View\View
+    {
+        return view('profile.show-profile', [
+            'user' => auth()->user(),
+        ]);
+    }
+
+
     /**
      * Display the user's profile form.
      */
