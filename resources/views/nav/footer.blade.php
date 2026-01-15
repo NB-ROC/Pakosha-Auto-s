@@ -3,7 +3,7 @@
   <div class="container footer-grid">
     <div class="col about">
       <div class="brand">
-        <img src="{{ asset('images/logo.png') }}" alt="Pakosha Autos" class="footer-logo">
+        <img src="{{ asset('../img/pakosha-logo.png') }}" alt="Pakosha Autos" class="footer-logo">
         <div class="brand-text">
           <h4>Pakosha Autos</h4>
           <small>Autogarage Arnhem</small>
