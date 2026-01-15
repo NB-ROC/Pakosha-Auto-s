@@ -3,7 +3,7 @@
   background: #0e1b26;
   color: #d7e3ea;
   padding: 36px 16px;
-  border: 6px solid #083441;
+  border: 6px solid #083441; /* buitenste kader */
   box-sizing: border-box;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
@@ -72,7 +72,7 @@
   border:1px solid rgba(255,255,255,0.03);
 }
 
-/* Bottom bar footer */
+/* Bottom bar */
 .footer-bottom {
   margin-top:20px;
   padding-top:14px;
@@ -93,7 +93,7 @@
 /* Header styles */
 .site-header {
   background: #ffffff;
-  border-bottom: 4px solid #0e1b26; 
+  border-bottom: 4px solid #0e1b26; /* donkere lijn onder */
   padding: 10px 16px;
 }
 .header-inner {
@@ -126,7 +126,7 @@
 }
 .brand-text .tag {
   font-size: 12px;
-  color: #d7262b; 
+  color: #d7262b; /* rood subtitel */
   margin-top: 2px;
   font-weight:700;
 }
@@ -146,15 +146,72 @@
   font-weight: 500;
   padding: 8px 4px;
 }
-
+.main-nav a.active { color: #1976d2; } /* actieve link blauw */
 .main-nav a:hover { color: #1976d2; }
+
+/* Search Bar */
+.search-bar {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-form:focus-within {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+  width: 200px;
+  outline: none;
+  font-family: inherit;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.search-btn:hover {
+  color: #1976d2;
+}
 
 /* Responsive */
 @media (max-width: 780px) {
   .main-nav ul { gap: 12px; }
   .brand-text .name { font-size: 15px; }
+  .search-input { width: 120px; }
 }
 @media (max-width: 520px) {
-  .header-inner { gap: 12px; }
-  .main-nav ul { display: none; } 
+  .header-inner { gap: 8px; }
+  .main-nav ul { display: none; } /* verberg menu op heel kleine schermen (mobile menu later toevoegen) */
+  .search-bar { margin-right: 10px; }
+  .search-input { width: 80px; }
 }
